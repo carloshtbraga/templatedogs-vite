@@ -1,0 +1,65 @@
+/* About.css */
+.about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: rgb(175,7,69);
+background: linear-gradient(0deg, rgba(175,7,69,1) 0%, rgba(133,0,0,1) 50%, rgba(175,7,69,1) 100%);
+}
+
+.about p {
+  color: #ffffff;
+  text-align: center;
+  margin-right: 60px;
+  font-size: 20px;
+}
+
+.about div {
+  width: 50%;
+  text-align: center;
+}
+
+.about img {
+  width: 50%;
+}
+
+.divp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #ffffff;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.276);
+}
+
+
+@media screen and (max-width: 600px) {
+  /* About.css */
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: rgb(175,7,69);
+background: linear-gradient(0deg, rgba(175,7,69,1) 0%, rgba(133,0,0,1) 50%, rgba(175,7,69,1) 100%);
+}
+
+.about p {
+  color: #ffffff;
+  text-align: center;
+  margin-left: 50px;
+  font-size: 20px;
+  width: 100%;
+}
+
+}

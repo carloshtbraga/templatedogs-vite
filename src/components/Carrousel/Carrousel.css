@@ -1,0 +1,31 @@
+.div-pai-carousel {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #c8b080;
+  border-radius: 20px;
+}
+
+.main-carousel {
+  max-height: 700px;
+  border-radius: 20px;
+}
+
+.carousel-item {
+  max-height: 700px;
+  border-radius: 20px;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #af0745;
+  border-radius: 20px;
+  border-style: groove;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+}
