@@ -8,14 +8,18 @@ import Grid from './components/Grid/Grid';
 import Team from './components/Team/Team';
 import About2 from './components/About2/About2';
 import Footer from './components/Footer/Footer';
+import AnimateOnScroll from 'react-global-animate-on-scroll';
+import { useContext } from 'react';
+import MyContext from './Context/MyContext';
 
 function App() {
+  const { isDarkMode } = useContext(MyContext);
 
   return (
     <>
      <Header />
 
-     <main style={{backgroundColor: '#c8b080'}}>
+     <main className={isDarkMode ? 'maindark' : 'mainlight'}>
       <Carrousel />      
       <About />
       <Grid />
@@ -23,6 +27,8 @@ function App() {
       <About2 />
       <Footer />
      </main>
+
+     <AnimateOnScroll animateOnce/>
     </>
   )
 }

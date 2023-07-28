@@ -5,8 +5,14 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background: rgb(175,7,69);
-background: linear-gradient(0deg, rgba(175,7,69,1) 0%, rgba(133,0,0,1) 50%, rgba(175,7,69,1) 100%);
+  background: rgb(175, 7, 69);
+  background: linear-gradient(
+    0deg,
+    rgba(175, 7, 69, 1) 0%,
+    rgba(133, 0, 0, 1) 50%,
+    rgba(175, 7, 69, 1) 100%
+  );
+  transition: 1s;
 }
 
 .about p {
@@ -22,7 +28,7 @@ background: linear-gradient(0deg, rgba(175,7,69,1) 0%, rgba(133,0,0,1) 50%, rgba
 }
 
 .about img {
-  width: 50%;
+  width: 60%;
 }
 
 .divp {
@@ -40,26 +46,93 @@ h1 {
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.276);
 }
 
-
 @media screen and (max-width: 600px) {
   /* About.css */
-.about {
+  .about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: rgb(175, 7, 69);
+    background: linear-gradient(
+      0deg,
+      rgba(175, 7, 69, 1) 0%,
+      rgba(133, 0, 0, 1) 50%,
+      rgba(175, 7, 69, 1) 100%
+    );
+  }
+
+  .about p {
+    color: #ffffff;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------------------- */
+
+.about-dark {
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background: rgb(175,7,69);
-background: linear-gradient(0deg, rgba(175,7,69,1) 0%, rgba(133,0,0,1) 50%, rgba(175,7,69,1) 100%);
+  background: rgb(50, 50, 50);
+  background: linear-gradient(
+    0deg,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(10, 10, 10, 1) 50%,
+    rgba(50, 50, 50, 1) 100%
+  );
+  transition: 1s;
 }
 
-.about p {
+.about-dark p {
   color: #ffffff;
   text-align: center;
-  margin-left: 50px;
+  margin-right: 60px;
   font-size: 20px;
-  width: 100%;
 }
 
+.about-dark div {
+  width: 50%;
+  text-align: center;
+}
+
+.about-dark img {
+  width: 60%;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  /* About.css */
+  .about-dark {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: rgb(50, 50, 50);
+    background: linear-gradient(
+      0deg,
+      rgba(50, 50, 50, 1) 0%,
+      rgba(10, 10, 10, 1) 50%,
+      rgba(50, 50, 50, 1) 100%
+    );
+  }
+
+  .about-dark p {
+    color: #ffffff;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 20px;
+    width: 100%;
+  }
 }

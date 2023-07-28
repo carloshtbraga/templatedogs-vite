@@ -1,33 +1,59 @@
-.grid{
-    background: rgb(175,7,69);
-    background: linear-gradient(0deg, rgba(175,7,69,1) 0%, rgba(133,0,0,1) 50%, rgba(175,7,69,1) 100%);
+.grid {
+  background: rgb(175, 7, 69);
+  background: linear-gradient(
+    0deg,
+    rgba(175, 7, 69, 1) 0%,
+    rgba(133, 0, 0, 1) 50%,
+    rgba(175, 7, 69, 1) 100%
+  );
 }
 
-.grid h1{
-    text-align: center;
-    margin-bottom: 50px;
-    color: #ffffff;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.276);
-}
-
-.grid img{
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
-    border: 2px solid #fcda90;
-}
-
-.about p {
-  color: #ffffff;
+.grid h1 {
   text-align: center;
-  margin-right: 60px;
-  font-size: 20px;
+  margin-bottom: 50px;
+  color: #ffffff;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.276);
 }
+
+.grid img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 5px inset #fcda90;
+}
+
+
 
 @media screen and (max-width: 600px) {
-    .logo {
-      width: 50px;
-      height: 50px;
-    }
+  .logo {
+    width: 50px;
+    height: 50px;
   }
-  
+}
+
+/* ----------------------------- */
+
+.grid-dark {
+  background: rgb(50, 50, 50);
+background: linear-gradient(
+  0deg,
+  rgba(50, 50, 50, 1) 0%,
+  rgba(10, 10, 10, 1) 50%,
+  rgba(50, 50, 50, 1) 100%
+);
+}
+
+
+.grid-dark h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #ffffff;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.276);
+}
+
+.grid-dark img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 5px inset rgba(175, 7, 69, 1);
+}

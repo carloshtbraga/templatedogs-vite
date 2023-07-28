@@ -16,7 +16,7 @@
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.276);
   border: 5px inset #c8b080;
@@ -56,20 +56,15 @@ h5 {
 }
 
 .svgabout2 {
-  width: 70px;
+  width: 50px;
   height: 100%;
   filter: brightness(0) invert(1);
   margin-right: 20px;
 }
 
-
 @media screen and (max-width: 600px) {
-  
   .about2 p {
-    
     font-size: 8px;
-    
-    
   }
   .svgabout2 {
     width: 50px;
@@ -78,4 +73,38 @@ h5 {
     margin-right: 20px;
     margin-bottom: 5px;
   }
+}
+
+/* ------------------------------------------------------ */
+
+.about2-dark {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: rgb(50, 50, 50);
+background: linear-gradient(
+  0deg,
+  rgba(50, 50, 50, 1) 0%,
+  rgba(10, 10, 10, 1) 50%,
+  rgba(50, 50, 50, 1) 100%
+);
+}
+
+.about2-dark p {
+  color: #ffffff;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.276);
+  border: 5px inset rgba(175, 7, 69, 1);
+  padding: 10px;
+  background: rgb(175, 7, 69);
+  background: linear-gradient(
+    0deg,
+    rgba(175, 7, 69, 1) 0%,
+    rgba(133, 0, 0, 1) 50%,
+    rgba(175, 7, 69, 1) 100%
+  );
 }

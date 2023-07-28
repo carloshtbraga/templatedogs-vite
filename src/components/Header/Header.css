@@ -1,68 +1,95 @@
 /* Header.css */
 .bg-custom {
-  background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(133,0,0,1) 0%, rgba(175,7,69,1) 100%, rgba(0,0,0,1) 100%);
-    height: 120px;
-  }
-  
-  .logo {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .brand h2 {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 700;
-    margin-left: 20px;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.276);
-  }
-  
-  .navbar-nav {
-    margin-left: 60%;
-    color: white;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.276);
-  }
-  
-  .link {
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 20px;
-  }
-  
-  /* Estilize apenas o dropdown com a classe .dropdown-link */
-  .dropdown-link .dropdown-menu {
-    background-color: #af0745; /* Cor de fundo do dropdown */
-    border: none; /* Remova a borda do dropdown */
-  }
-  
-  .dropdown-link .dropdown-item {
-    color: white; /* Cor do texto do dropdown */
-    font-size: 18px; /* Tamanho do texto do dropdown */
-    font-weight: 500; /* Peso da fonte do dropdown */
-  }
-  
-  /* Estilize o título do dropdown para branco */
-  .dropdown-title {
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-  }
-  
-svg{
-    background-color: #c8b080
-   
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(133, 0, 0, 1) 0%,
+    rgba(175, 7, 69, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  height: 120px;
+  transition: background 2s;
 }
 
+.logo {
+  width: 100px;
+  height: 100px;
+}
 
-@media screen and (max-width: 600px) {
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 20px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.276);
+}
+
+.navbar-nav {
+  margin-left: 60%;
+  color: white;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.276);
+}
+
+.link {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+/* Estilize apenas o dropdown com a classe .dropdown-link */
+.dropdown-link .dropdown-menu {
+  background-color: #af0745; /* Cor de fundo do dropdown */
+  border: none; /* Remova a borda do dropdown */
+}
+
+.dropdown-link .dropdown-item {
+  color: white; /* Cor do texto do dropdown */
+  font-size: 18px; /* Tamanho do texto do dropdown */
+  font-weight: 500; /* Peso da fonte do dropdown */
+}
+
+/* Estilize o título do dropdown para branco */
+.dropdown-title {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.svglight {
+  background-color: #c8b080;
+}
+
+.links-container {
+  
+}
+
+.darkbtn{
+ border: none;
+ background: none;
+ font-size: 20px;
+ font-weight: 700;
+ color: white;
+ width: 300px;
+ text-align: start;
+
+}
+
+.darkimg{
+  width: 40px;
+}
+
+/* Estilos para o menu hamburguer no modo escuro */
+
+
+
+@media screen and (max-width: 1000px) {
   .logo {
     width: 50px;
     height: 50px;
@@ -75,4 +102,33 @@ svg{
     margin-left: 20px;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.276);
   }
+
+  .links-container {
+    background-color: #c8b080; /* Background desejado para a lista de links */
+    padding: 10px; /* Adicione espaçamento interno para melhor visualização */
+    border-radius: 10px; /* Adicione bordas arredondadas, se desejado */
+    text-align: center;
+
+  }
 }
+
+/* ---------------------------------------------------------- */
+
+/* Header.css */
+.bg-custom-dark {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgb(10, 10, 10) 0%,
+    rgb(50, 50, 50) 100%,
+    rgba(26, 26, 26, 1) 100%
+  );
+  height: 120px;
+  transition: background 2s;
+}
+
+.svgdark {
+  background-color: rgb(75, 77, 74);
+}
+
+

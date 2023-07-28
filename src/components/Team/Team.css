@@ -1,7 +1,12 @@
 .team {
   height: fit-content;
-  background: rgb(175,7,69);
-  background: linear-gradient(0deg, rgba(175,7,69,1) 0%, rgba(133,0,0,1) 50%, rgba(175,7,69,1) 100%);
+  background: rgb(175, 7, 69);
+  background: linear-gradient(
+    0deg,
+    rgba(175, 7, 69, 1) 0%,
+    rgba(133, 0, 0, 1) 50%,
+    rgba(175, 7, 69, 1) 100%
+  );
 }
 
 .dog {
@@ -40,43 +45,65 @@
 @media screen and (max-width: 600px) {
   .tv-container {
     width: 190px;
-    
   }
 
   .tv {
-    
     width: 280px;
-  
+
     margin: 0 auto;
   }
 
   .team {
     height: fit-content;
-    background: rgb(175,7,69);
-    background: linear-gradient(0deg, rgba(175,7,69,1) 0%, rgba(133,0,0,1) 50%, rgba(175,7,69,1) 100%);
+    background: rgb(175, 7, 69);
+    background: linear-gradient(
+      0deg,
+      rgba(175, 7, 69, 1) 0%,
+      rgba(133, 0, 0, 1) 50%,
+      rgba(175, 7, 69, 1) 100%
+    );
   }
-  
+
+  .team-dark {
+    height: fit-content;
+    background: rgb(50, 50, 50);
+    background: linear-gradient(
+      0deg,
+      rgba(50, 50, 50, 1) 0%,
+      rgba(10, 10, 10, 1) 50%,
+      rgba(50, 50, 50, 1) 100%
+    );
+  }
+
   .dog {
     width: 300px;
   }
-  
+
   .divdog {
     display: flex;
     margin-right: 80px;
     justify-content: space-around;
-    
   }
-  
-  
- 
-  
+
   .carrossel-container {
     position: absolute;
     top: 25%; /* Ajuste a posição vertical do carrossel dentro da TV */
     left: 1.5%; /* Ajuste a posição horizontal do carrossel dentro da TV */
     width: 80%; /* Ajuste o tamanho do carrossel para caber dentro da TV */
-  
+
     /* Adicione outros estilos conforme necessário para posicionar o carrossel dentro da TV */
   }
-  
+}
+
+/* --------------------- */
+
+.team-dark {
+  height: fit-content;
+  background: rgb(50, 50, 50);
+  background: linear-gradient(
+    0deg,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(10, 10, 10, 1) 50%,
+    rgba(50, 50, 50, 1) 100%
+  );
 }
