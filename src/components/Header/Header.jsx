@@ -28,7 +28,7 @@ export default function Header() {
               src={logo}
               alt="https://via.placeholder.com/400x400"
             />
-            <h2>Adote um Dog!</h2>
+            <h2>Dog!</h2>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

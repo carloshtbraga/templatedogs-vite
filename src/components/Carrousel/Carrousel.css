@@ -43,6 +43,15 @@
     border-style: groove;
   }
 
+  .h5-carro{
+    color: #af0745;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.276);
+  
+    margin-bottom: 30px;
+  }
  
 }
 
