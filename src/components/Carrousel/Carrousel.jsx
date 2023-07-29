@@ -12,6 +12,7 @@ function Carrousel() {
 
   return (
     <div className={`animate__animated animate__fadeInUp div-pai-carousel ${isDarkMode ? 'dark-mode' : ''}`}>
+      <h5 className="h5-carro">Quem não é capaz de amar um animal, também não será capaz de amar um ser humano</h5>
       <Carousel className="main-carousel">
         <Carousel.Item className="carousel-item">
           <CarrouselImg

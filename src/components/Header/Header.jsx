@@ -7,6 +7,7 @@ import "./Header.css";
 import logo from "../../assets/pawn.svg";
 import moon from "../../assets/moon.png";
 import normal from "../../assets/normal.png";
+import donation from "../../assets/donation.png";
 
 import MyContext from "../../Context/MyContext";
 import { useContext } from "react";
@@ -33,18 +34,26 @@ export default function Header() {
           <Navbar.Collapse id="basic-navbar-nav">
             <div className="links-container sticky-top ">
               <Nav className="me-auto">
+                
+                <Nav.Link href="#home" className="link">
+                  Contato
+                </Nav.Link>
                 <Nav.Link href="#home" className="link">
                   Equipe
                 </Nav.Link>
-                <Nav.Link href="#link" className="link">
-                  Contato
-                </Nav.Link>
+                
 
                 <Nav.Link href="#link" className="link">
                   
                   <button className="darkbtn" onClick={toggleDarkMode}>
                   <img src={isDarkMode? normal : moon} alt="" className="darkimg" /> {isDarkMode ? "Normal Mode" : "Dark Mode"}
                   </button>
+                </Nav.Link>
+                <Nav.Link href="#home" className="link">
+                <button className="darkbtn">
+                <img src={donation} alt="" className="darkimg"/> Doar
+                  </button>
+           
                 </Nav.Link>
                 
               </Nav>

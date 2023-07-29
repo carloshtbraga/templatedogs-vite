@@ -11,6 +11,13 @@
   transition: background 2s;
 }
 
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
 .logo {
   width: 100px;
   height: 100px;
@@ -31,19 +38,26 @@
 }
 
 .navbar-nav {
-  margin-left: 60%;
+  margin-left: 40%;
   color: white;
+  display: flex;
+  align-items: center;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.276);
 }
 
 .link {
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
-  margin-left: 20px;
+  display: flex;
+  margin-right: 20px;
 }
 
-/* Estilize apenas o dropdown com a classe .dropdown-link */
+.doar {
+  font-size: 16px;
+}
+
+
 .dropdown-link .dropdown-menu {
   background-color: #af0745; /* Cor de fundo do dropdown */
   border: none; /* Remova a borda do dropdown */
@@ -55,7 +69,7 @@
   font-weight: 500; /* Peso da fonte do dropdown */
 }
 
-/* Estilize o título do dropdown para branco */
+
 .dropdown-title {
   color: white;
   font-size: 18px;
@@ -66,28 +80,21 @@
   background-color: #c8b080;
 }
 
-.links-container {
-  
+.darkbtn {
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  width: 160px;
+  text-align: start;
 }
 
-.darkbtn{
- border: none;
- background: none;
- font-size: 20px;
- font-weight: 700;
- color: white;
- width: 300px;
- text-align: start;
-
-}
-
-.darkimg{
+.darkimg {
   width: 40px;
 }
 
 /* Estilos para o menu hamburguer no modo escuro */
-
-
 
 @media screen and (max-width: 1000px) {
   .logo {
@@ -108,7 +115,6 @@
     padding: 10px; /* Adicione espaçamento interno para melhor visualização */
     border-radius: 10px; /* Adicione bordas arredondadas, se desejado */
     text-align: center;
-
   }
 }
 
@@ -130,5 +136,3 @@
 .svgdark {
   background-color: rgb(75, 77, 74);
 }
-
-

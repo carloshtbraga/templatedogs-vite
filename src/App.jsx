@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer';
 import AnimateOnScroll from 'react-global-animate-on-scroll';
 import { useContext } from 'react';
 import MyContext from './Context/MyContext';
+import Place from './components/Place/Place';
 
 function App() {
   const { isDarkMode } = useContext(MyContext);
@@ -22,6 +23,7 @@ function App() {
      <main className={isDarkMode ? 'maindark' : 'mainlight'}>
       <Carrousel />      
       <About />
+      <Place />
       <Grid />
       <Team />
       <About2 />
